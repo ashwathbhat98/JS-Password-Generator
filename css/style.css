@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Fira Code", monospace;
+  min-height: 100vh;
+  background: #111d4a;
+}
+
+.header {
+  margin-bottom: auto;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.header,
+.footer {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header a,
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header a:hover, .header a:focus,
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #2ec4b6;
+  -webkit-box-shadow: 3px 3px 0 #249b90;
+          box-shadow: 3px 3px 0 #249b90;
+}
+
+.password {
+  margin-bottom: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  color: #b5f44a;
+  background: #111d4a;
+  -webkit-box-shadow: 3px 3px 0 #070d21;
+          box-shadow: 3px 3px 0 #070d21;
+}
+
+.password-holder {
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+  border: none;
+  background: none;
+  color: #b5f44a;
+  outline: none;
+}
+
+.password .copy {
+  padding: 5px;
+  display: block;
+  border: none;
+  border-radius: 2px;
+  color: #111d4a;
+  background: #b5f44a;
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  outline: none;
+  cursor: pointer;
+}
+
+.password .copy:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.form .form-group {
+  margin: 10px 0;
+}
+
+.form .input,
+.form .btn {
+  font-family: "Fira Code", monospace;
+}
+
+.form .input {
+  padding: 2px;
+  border: none;
+  border-radius: 2px;
+}
+
+.form .btn {
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  display: block;
+  border: none;
+  color: #fff;
+  background: #d62246;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 0 #aa1b38;
+          box-shadow: 3px 3px 0 #aa1b38;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  outline: none;
+}
+
+.form .btn:hover, .form .btn:focus {
+  background: #c01f3f;
+}
+
+.form .btn:active {
+  -webkit-box-shadow: 0 0 0 #aa1b38;
+          box-shadow: 0 0 0 #aa1b38;
+}
+
+.form .btn,
+.form .label {
+  cursor: pointer;
+}

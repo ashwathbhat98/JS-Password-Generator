@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111d4a">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        Password generator
+    </header>
+    <div class="container">
+        <div id="password" class="password">
+            <input type="text" value="Password" class="password-holder" readonly>
+            <button id="copyText" class="copy">Copy</button>
+        </div>
+        <form id="generator" class="form">
+            <div class="form-group">
+                <label for="passLengthNumber" class="label">Password length:</label>
+                <input type="range" id="passLengthSlider" value="10" min="8" max="30">
+                <input type="number" id="passLengthNumber" class="input" value="10" min="8" max="30">
+            </div>
+            <div class="form-group">
+                <label for="includeUppercase" class="label">Include uppercase:</label>
+                <input type="checkbox" id="includeUppercase">
+            </div>
+            <div class="form-group">
+                <label for="includeNumbers" class="label">Include numbers:</label>
+                <input type="checkbox" id="includeNumbers">
+            </div>
+            <div class="form-group">
+                <label for="includeSymbols" class="label">Include symbols:</label>
+                <input type="checkbox" id="includeSymbols">
+            </div>
+
+            <button type="submit" class="btn">Generate password</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <a href="https://github.com/ashwathbhat98/JS-Password-Generator" target="_blank">GitHub</a>
+		&#124;
+		<a href="https://www.linkedin.com/in/ashwathbhat98/" target="_blank">LinkedIn</a>
+       
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
