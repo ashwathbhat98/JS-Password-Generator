@@ -1,6 +1,6 @@
 const form = document.getElementById('generator')
 const passHolder = document.querySelector('#password input')
-const copyText = document.getElementById('copyText')
+const _copyText = document.getElementById('copyText')
 const passLengthSlider = document.getElementById('passLengthSlider')
 const passLengthNumber = document.getElementById('passLengthNumber')
 const uppercase = document.getElementById('includeUppercase')
@@ -33,7 +33,7 @@ const generatePassword = async (passLength, includeUppercase, includeNumbers, in
     return passwordCharacters.join('')
 }
 
-const characterCodeGenerator = (low, high) => Array.from(Array(high - low + 1), (_, i) => low + i)
+const _characterCodeGenerator = (low, high) => Array.from(Array(high - low + 1), (_, i) => low + i)
 
 const copyPass = async (e) => {
     passHolder.select()
